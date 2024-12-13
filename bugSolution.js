@@ -1,0 +1,1 @@
+function foo(a,b){if(typeof a !== 'number' || typeof b !== 'number'){throw new Error("Both arguments must be numbers");}return a+b;}let x = foo(1,2);console.log(x); // Output: 3try{let y = foo(1,"2");console.log(y);}catch(e){console.error(e); // Output: Error: Both arguments must be numbers} 
